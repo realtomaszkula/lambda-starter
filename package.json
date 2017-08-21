@@ -1,0 +1,23 @@
+{
+  "name": "zet-aws-lambda-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Tomasz Kula",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "4.0.0",
+    "aws-sdk": "2.100.0",
+    "dotenv": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "0.0.16",
+    "@types/aws-sdk": "2.7.0",
+    "@types/node": "8.0.24",
+    "typescript": "2.x"
+  }
+}

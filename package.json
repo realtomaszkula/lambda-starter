@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "lint": "tslint --config tslint.json .",
+    "lint": "tslint --config tslint.json src/**/* --fix",
+    "prettier" : "prettier --config .prettierrc src/**/* --write",
     "build": "tsc"
   },
   "keywords": [],
@@ -17,6 +18,7 @@
     "@types/aws-lambda": "*",
     "@types/aws-sdk": "*",
     "@types/node": "*",
+    "prettier": "*",
     "tslint": "*",
     "typescript": "*"
   }

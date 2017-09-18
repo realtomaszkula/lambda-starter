@@ -5,8 +5,15 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "tslint --config tslint.json src/**/* --fix",
-    "prettier" : "prettier --config .prettierrc src/**/* --write",
-    "build": "tsc"
+    "prettier": "prettier --config .prettierrc src/**/* --write",
+    "build": "tsc",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "npm run prettier",
+      "git add"
+    ]
   },
   "keywords": [],
   "author": "Tomasz Kula",
@@ -18,8 +25,10 @@
     "@types/aws-lambda": "*",
     "@types/aws-sdk": "*",
     "@types/node": "*",
+    "husky": "*",
     "prettier": "*",
     "tslint": "*",
-    "typescript": "*"
+    "typescript": "*",
+    "lint-staged": "*"
   }
 }

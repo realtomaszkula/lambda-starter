@@ -2,8 +2,9 @@
   "name": "zet-aws-lambda-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "lint": "tslint --config tslint.json .",
     "build": "tsc"
   },
   "keywords": [],
@@ -16,6 +17,7 @@
     "@types/aws-lambda": "*",
     "@types/aws-sdk": "*",
     "@types/node": "*",
+    "tslint": "*",
     "typescript": "*"
   }
 }
